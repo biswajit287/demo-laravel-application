@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    //
+    protected $table = 'posts';
+    public $primery_key = 'id';
+
+    public function user()
+    {
+       return $this->belogsTo('App\User');
+    }
 }

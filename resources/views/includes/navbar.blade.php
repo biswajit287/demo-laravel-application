@@ -45,6 +45,9 @@
                             {{ csrf_field() }}
                         </form>
                     </li>
+                    <li>
+                        <a class="dropdown-item" href="/dashboard">Dashboard</a>
+                    </li>
                 </ul>
             </li>
         @endif
